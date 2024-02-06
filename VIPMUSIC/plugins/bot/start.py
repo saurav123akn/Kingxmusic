@@ -26,11 +26,11 @@ from strings import get_string
 
 
 YUMI_PICS = [
-"https://telegra.ph/file/3ed81ef4e352a691fb0b4.jpg",
-"https://telegra.ph/file/3134ed3b57eb051b8c363.jpg",
-"https://telegra.ph/file/6ca0813b719b6ade1c250.jpg",
-"https://telegra.ph/file/5a2cbb9deb62ba4b122e4.jpg",
-"https://telegra.ph/file/cb09d52a9555883eb0f61.jpg"
+"https://telegra.ph/file/43434e0733817bdf14ad3.jpg",
+"https://telegra.ph/file/557c376a10971d99692ef.jpg",
+"https://telegra.ph/file/4f2f1b0cc8b6656557fad.jpg",
+"https://telegra.ph/file/46eb44b5b8f4f4c203582.jpg",
+"https://telegra.ph/file/ba25e67aef937b98ce867.jpg",
 
 ]
 
@@ -54,7 +54,7 @@ async def start_pm(client, message: Message, _):
             if await is_on_off(2):
                 return await app.send_message(
                     chat_id=config.LOGGER_ID,
-                    text=f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ᴄʜᴇᴄᴋ <b>sᴜᴅᴏʟɪsᴛ</b>.\n\n<b>ᴜsᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
+                    text=f"{message.from_user.mention} 𝐉ᴜsᴛ 𝐒ᴛᴀʀᴛᴇᴅ 𝐓ʜᴇ 𝐁ᴏᴛ 𝐓ᴏ 𝐂ʜᴇᴄᴋ <b>𝐒ᴜᴅᴏʟɪsᴛ</b>.\n\n<b>𝐔sᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>𝐔sᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
                 )
             return
         if name[0:3] == "inf":
@@ -92,7 +92,7 @@ async def start_pm(client, message: Message, _):
             if await is_on_off(2):
                 return await app.send_message(
                     chat_id=config.LOGGER_ID,
-                    text=f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ᴄʜᴇᴄᴋ <b>ᴛʀᴀᴄᴋ ɪɴғᴏʀᴍᴀᴛɪᴏɴ</b>.\n\n<b>ᴜsᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
+                    text=f"{message.from_user.mention} 𝐉ᴜsᴛ 𝐒ᴛᴀʀᴛᴇᴅ 𝐓ʜᴇ 𝐁ᴏᴛ 𝐓ᴏ 𝐂ʜᴇᴄᴋ <b>𝐓ʀᴀᴄᴋ 𝐈ɴғᴏʀᴍᴀᴛɪᴏɴ</b>.\n\n<b>𝐔sᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>𝐔sᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
                 )
     else:
         out = private_panel(_)
@@ -104,7 +104,7 @@ async def start_pm(client, message: Message, _):
         if await is_on_off(2):
             return await app.send_message(
                 chat_id=config.LOGGER_ID,
-                text=f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ.\n\n<b>ᴜsᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
+                text=f"{message.from_user.mention} 𝐉ᴜsᴛ 𝐒ᴛᴀʀᴛᴇᴅ 𝐓ʜᴇ 𝐁ᴏᴛ.\n\n<b>𝐔sᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>𝐔sᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
             )
 
 
