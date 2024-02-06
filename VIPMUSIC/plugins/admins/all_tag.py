@@ -16,7 +16,7 @@ async def tag_all_users(_,message):
 
     replied = message.reply_to_message  
     if len(message.command) < 2 and not replied:
-        await message.reply_text("** ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴛᴀɢ ᴀʟʟ, ʟɪᴋᴇ »** `@all Hi Friends`") 
+        await message.reply_text(" 𝐆ɪᴠᴇ 𝐒ᴏᴍᴇ 𝐓ᴇxᴛ 𝐓ᴏ 𝐓ᴀɢ 𝐀ʟʟ,𝐋ɪᴋᴇ `@all Hiiiiiii`") 
         return                  
     if replied:
         SPAM_CHATS.append(message.chat.id)      
@@ -57,7 +57,7 @@ async def tag_all_users(_,message):
         except Exception:
             pass        
            
-@app.on_message(filters.command(["stopmention", "offall", "cancel", "allstop", "stopall", "cancelmention", "offmention", "mentionoff", "alloff", "cancelall", "allcancel" ], prefixes=["/", "@", "#"]) & admin_filter)
+@app.on_message(filters.command(["stopmention", "cancel", "stopall", "cancelmention", "mentionoff", "cancelall", "allcancel" ], prefixes=["/", "@", "#"]) & admin_filter)
 async def cancelcmd(_, message):
     chat_id = message.chat.id
     if chat_id in SPAM_CHATS:
@@ -65,8 +65,8 @@ async def cancelcmd(_, message):
             SPAM_CHATS.remove(chat_id)
         except Exception:
             pass   
-        return await message.reply_text("**ᴛᴀɢɢɪɴɢ ᴘʀᴏᴄᴇss sᴜᴄᴄᴇssғᴜʟʟʏ sᴛᴏᴘᴘᴇᴅ!**")     
+        return await message.reply_text("𝐓ᴀɢɢɪɴɢ 𝐏ʀᴏᴄᴇss 𝐒ᴜᴄᴄᴇssғᴜʟʟʏ 𝐒ᴛᴏᴘᴘᴇᴅ!😗")     
                                      
     else :
-        await message.reply_text("**ɴᴏ ᴘʀᴏᴄᴇss ᴏɴɢᴏɪɴɢ!**")  
+        await message.reply_text("𝐓ʜᴇʀᴇ 𝐈ꜱ 𝐍ᴏ 𝐀ɴʏ 𝐓ᴀɢ 𝐏ʀᴏᴄᴇꜱꜱ 𝐎ɴɢᴏɪɴɢ!!..")  
         return       
