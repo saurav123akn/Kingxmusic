@@ -15,18 +15,18 @@ async def tag_all_users(_, message):
     global SPAM_CHATS
     chat_id = message.chat.id
     if len(message.text.split()) == 1:
-        await message.reply_text("** ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴛᴀɢ ᴀʟʟ, ʟɪᴋᴇ »** `@utag Hi Friends`")
+        await message.reply_text("𝐆ɪᴠᴇ 𝐒ᴏᴍᴇ 𝐓ᴇxᴛ 𝐓ᴏ 𝐓ᴀɢ 𝐀ʟʟ, 𝐋ɪᴋᴇ `@utag Hi Friends`")
         return
 
     text = message.text.split(None, 1)[1]
     if text:
-        await message.reply_text("**ᴜᴛᴀɢ [ᴜɴʟɪᴍɪᴛᴇᴅ ᴛᴀɢ] sᴛᴀʀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ!**\n\n**๏ ᴛᴀɢɢɪɴɢ ᴡɪᴛʜ sʟᴇᴇᴘ ᴏғ 5 sᴇᴄ.**\n\n**➥ ᴏғғ ᴛᴀɢɢɪɴɢ ʙʏ » /stoputag**")
+        await message.reply_text("𝐔ᴛᴀɢ [𝐔ɴʟɪᴍɪᴛᴇᴅ 𝐓ᴀɢ] 𝐒ᴛᴀʀᴛᴇᴅ 𝐒ᴜᴄᴄᴇssғᴜʟʟʏ!😙😃\n\n**➥ 𝐎ғғ 𝐓ᴀɢɢɪɴɢ 𝐁ʏ /stoputag**")
 
     SPAM_CHATS[chat_id] = True
     f = True
     while f:
         if SPAM_CHATS.get(chat_id) == False:
-            await message.reply_text("**ᴜɴʟɪᴍɪᴛᴇᴅ ᴛᴀɢ ᴀʟʟ sᴜᴄᴄᴇssғᴜʟʟʏ sᴛᴏᴘᴘᴇᴅ!**")
+            await message.reply_text("𝐔ɴʟɪᴍɪᴛᴇᴅ 𝐓ᴀɢ 𝐀ʟʟ 𝐒ᴜᴄᴄᴇssғᴜʟʟʏ 𝐒ᴛᴏᴘᴘᴇᴅ!😙😀")
             break
         usernum = 0
         usertxt = ""
@@ -37,7 +37,7 @@ async def tag_all_users(_, message):
                 usernum+= 1
                 usertxt += f"\n⊚ [{m.user.first_name}](tg://user?id={m.user.id})\n"
                 if usernum == 5:
-                    await app.send_message(message.chat.id, f'{text}\n{usertxt}\n\n|| ➥ ᴏғғ ᴛᴀɢɢɪɴɢ ʙʏ » /stoputag ||')
+                    await app.send_message(message.chat.id, f'{text}\n{usertxt}\n\n|| ➥ 𝐎ғғ 𝐓ᴀɢɢɪɴɢ 𝐁ʏ /stoputag ||')
                     usernum = 0
                     usertxt = ""
                     await asyncio.sleep(5)
@@ -50,6 +50,6 @@ async def stop_tagging(_, message):
     chat_id = message.chat.id
     if SPAM_CHATS.get(chat_id) == True:
         SPAM_CHATS[chat_id] = False
-        return await message.reply_text("**Tagging process stopped successfully!**")
+        return await message.reply_text("𝐓ᴀɢ 𝐏ʀᴏᴄᴇꜱꜱ 𝐒ᴛᴏᴘᴇᴅ 𝐒ᴜᴄᴄᴇꜱꜰᴜʟʟʏ!😙😊")
     except KeyError:
-        await message.reply_text("**No active tagging process found!**")
+        await message.reply_text("𝐍ᴏ 𝐀ᴄᴛɪᴠᴇ 𝐓ᴀɢɢɪɴɢ 𝐏ʀᴏᴄᴇꜱꜱ 𝐅ᴏᴜɴᴅ!😙😀")
