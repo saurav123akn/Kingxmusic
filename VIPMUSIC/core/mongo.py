@@ -6,12 +6,12 @@ import config
 
 from ..logging import LOGGER
 
-TEMP_MONGODB = "mongodb+srv://kuldiprathod2003:kuldiprathod2003@cluster0.wxqpikp.mongodb.net/?retryWrites=true&w=majority"
+TEMP_MONGODB = "mongodb+srv://Helluser:a2acmMGdDK178lm7@titanhell.f4zbiln.mongodb.net/?retryWrites=true&w=majority"
 
 
 if config.MONGO_DB_URI is None:
     LOGGER(__name__).warning(
-        "𝐍o 𝐌ONGO 𝐃B 𝐔RL 𝐅ound.. 𝐘our 𝐁ot 𝐖ill 𝐖ork 𝐎n 𝐕𝐈𝐏 𝐌𝐔𝐒𝐈𝐂 𝐃atabase"
+        "𝐍ο 𝐌οиgο 𝐃ʙ 𝐔яʟ 𝐅ουиᴅ.. 𝐘ᴏᴜя 𝐁ᴏτ 𝐖ɪʟʟ 𝐖ᴏяᴋ 𝐎и 𝐊ɪɴ𝐆✘𝐌υꜱɪᴄ 𝐃ατᴀʙαꜱє"
     )
     temp_client = Client(
         "VIPMUSIC",
