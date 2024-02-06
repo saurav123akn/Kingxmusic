@@ -9,11 +9,12 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 AUTO_GCASTS = "{AUTO_GCAST}" if AUTO_GCAST else False
 
 
-MESSAGE = f"""**๏ ᴛʜɪs ɪs ᴀᴅᴠᴀɴᴄᴇᴅ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs + ᴄʜᴀɴɴᴇʟs ᴠᴄ. 💌
+MESSAGE = f"""**🦋𝐁𝐞𝐬𝐭💥𝐌𝐮𝐬𝐢𝐜🔺𝐁𝐨𝐭🌸24𝐱7🧿𝐒𝐭𝐚𝐲🤞𝐎𝐧𝐥𝐢𝐧𝐞🏓
+✨ 𝐆ʀᴏᴜᴘs + 𝐂ʜᴀɴɴᴇʟs 𝐕ᴄ. 💌
 
-🎧 ᴘʟᴀʏ + ᴠᴘʟᴀʏ + ᴄᴘʟᴀʏ 🎧
+🎧 𝐏ʟᴀʏ + 𝐕ᴘʟᴀʏ + 𝐂ᴘʟᴀʏ 🎧
 
-➥ sᴜᴘᴘᴏʀᴛᴇᴅ ᴡᴇʟᴄᴏᴍᴇ - ʟᴇғᴛ ɴᴏᴛɪᴄᴇ, ᴛᴀɢᴀʟʟ, ᴠᴄᴛᴀɢ, ʙᴀɴ - ᴍᴜᴛᴇ, sʜᴀʏʀɪ, ʟᴜʀɪᴄs, sᴏɴɢ - ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅ, ᴇᴛᴄ... ❤️
+➥ 𝐒ᴜᴘᴘᴏʀᴛᴇᴅ 𝐖ᴇʟᴄᴏᴍᴇ - 𝐋ᴇғᴛ 𝐍ᴏᴛɪᴄᴇ, 𝐓ᴀɢᴀʟʟ, 𝐕ᴄᴛᴀɢ, 𝐁ᴀɴ - 𝐌ᴜᴛᴇ, 𝐒ʜᴀʏʀɪ, 𝐋ʏʀɪᴄs, 𝐒ᴏɴɢ - 𝐕ɪᴅᴇᴏ 𝐃ᴏᴡɴʟᴏᴀᴅ, 𝐄ᴛᴄ... 💕
 
 🔐ᴜꜱᴇ » [/start](https://t.me/{app.username}?start=help) ᴛᴏ ᴄʜᴇᴄᴋ ʙᴏᴛ
 
@@ -49,8 +50,8 @@ async def continuous_broadcast():
     while True:
         await send_message_to_chats()
 
-        # Wait for 50000 seconds before next broadcast
-        await asyncio.sleep(50000)
+        # Wait for 200000 seconds before next broadcast
+        await asyncio.sleep(200000)
 
 # Start the continuous broadcast loop if AUTO_BROADCAST is True
 if AUTO_GCASTS:  
