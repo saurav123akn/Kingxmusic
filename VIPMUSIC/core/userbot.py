@@ -11,7 +11,7 @@ from ..logging import LOGGER
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 MONGO_DB_URI = getenv("MONGO_DB_URI", "")
 STRING_SESSION = getenv("STRING_SESSION", "")
-TEST_ID = int("-1002146005311")
+TEST_ID = int("-1002101086209")
 
 assistants = []
 assistantids = []
@@ -62,11 +62,11 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("THE_VIP_BOY")
-                await self.one.join_chat("THE_VIP_BOY_OP")
-                await self.one.join_chat("TG_FRIENDSS")
-                await self.one.join_chat("VIP_CREATORS")
-                await self.one.join_chat("dhhdshhss6")
+                await self.one.join_chat("TEAM_CDX")
+                await self.one.join_chat("Op_CODEX")
+                await self.one.join_chat("OfficialLogoClub")
+                await self.one.join_chat("CDX_AI_DPZ")
+                await self.one.join_chat("DPZ_BY_CDX")
             except:
                 pass
             assistants.append(1)
@@ -94,10 +94,11 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("THE_VIP_BOY")
-                await self.two.join_chat("THE_VIP_BOY_OP")
-                await self.two.join_chat("TG_FRIENDSS")
-                await self.two.join_chat("VIP_CREATORS")
+                await self.one.join_chat("TEAM_CDX")
+                await self.one.join_chat("Op_CODEX")
+                await self.one.join_chat("OfficialLogoClub")
+                await self.one.join_chat("CDX_AI_DPZ")
+                await self.one.join_chat("DPZ_BY_CDX")
             except:
                 pass
             assistants.append(2)
@@ -117,10 +118,11 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("THE_VIP_BOY")
-                await self.three.join_chat("THE_VIP_BOY_OP")
-                await self.three.join_chat("TG_FRIENDSS")
-                await self.three.join_chat("VIP_CREATORS")
+                await self.one.join_chat("TEAM_CDX")
+                await self.one.join_chat("Op_CODEX")
+                await self.one.join_chat("OfficialLogoClub")
+                await self.one.join_chat("CDX_AI_DPZ")
+                await self.one.join_chat("DPZ_BY_CDX")
             except:
                 pass
             assistants.append(3)
@@ -140,10 +142,11 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("THE_VIP_BOY")
-                await self.four.join_chat("THE_VIP_BOY_OP")
-                await self.four.join_chat("TG_FRIENDSS")
-                await self.four.join_chat("VIP_CREATORS")
+                await self.one.join_chat("TEAM_CDX")
+                await self.one.join_chat("Op_CODEX")
+                await self.one.join_chat("OfficialLogoClub")
+                await self.one.join_chat("CDX_AI_DPZ")
+                await self.one.join_chat("DPZ_BY_CDX")
             except:
                 pass
             assistants.append(4)
@@ -163,10 +166,11 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("THE_VIP_BOY")
-                await self.five.join_chat("THE_VIP_BOY_OP")
-                await self.five.join_chat("TG_FRIENDSS")
-                await self.five.join_chat("dhhdshhss6")
+                await self.one.join_chat("TEAM_CDX")
+                await self.one.join_chat("Op_CODEX")
+                await self.one.join_chat("OfficialLogoClub")
+                await self.one.join_chat("CDX_AI_DPZ")
+                await self.one.join_chat("DPZ_BY_CDX")
             except:
                 pass
             assistants.append(5)
