@@ -40,14 +40,14 @@ async def ban_user(user_id, first_name, admin_id, admin_name, chat_id, reason, t
     try:
         await app.ban_chat_member(chat_id, user_id)
     except ChatAdminRequired:
-        msg_text = "Ban rights? Nah, I'm just here for the digital high-fives 🙌\nGive me ban rights! 😡🥺"
+        msg_text = "𝐈 𝐇ᴀᴠᴇ 𝐍ᴏ 𝐑ɪɢʜᴛ😢😩....𝐏ʟᴢᴢᴢᴢ 𝐆ɪᴠᴇ 𝐌ᴇ 𝐅ᴜʟʟ 𝐑ɪɢʜᴛ😡😓"
         return msg_text, False
     except UserAdminInvalid:
-        msg_text = "I wont ban an admin bruh!!"
+        msg_text = "𝐈 𝐖ᴏɴᴛ 𝐁ᴀɴ 𝐀ɴ 𝐀ᴅᴍɪɴ 𝐁ʀᴜʜ 𝐎ʀ 𝐒ɪꜱ.... 𝐒ᴏ 𝐏ʟᴢᴢ 𝐀ᴜᴋᴀᴛ 𝐌ᴇ 𝐌ᴜᴛᴇ 𝐊ʀᴏ!"😂"
         return msg_text, False
     except Exception as e:
         if user_id == {app.id}:
-            msg_text = "why should i ban myself? sorry but I'm not stupid like you"
+            msg_text = "𝐖ʜʏ 𝐒ʜᴏᴜʟᴅ 𝐈 𝐁ᴀɴ 𝐌ʏꜱᴇʟꜰ? 𝐒oʀʀʏ 𝐁ᴜᴛ 𝐈'ᴍ 𝐍ᴏᴛ 𝐒tuᴘɪᴅ 𝐋ɪᴋᴇ 𝐘oᴜ😂😜!!"
             return msg_text, False
         
         msg_text = f"opps!!\n{e}"
@@ -71,7 +71,7 @@ async def unban_user(user_id, first_name, admin_id, admin_name, chat_id):
     try:
         await app.unban_chat_member(chat_id, user_id)
     except ChatAdminRequired:
-        msg_text = "Ban rights? Nah, I'm just here for the digital high-fives 🙌\nGive me ban rights! 😡🥺"
+        msg_text = "𝐈 𝐇ᴀᴠᴇ 𝐍ᴏ 𝐑ɪɢʜᴛ😢😩....𝐏ʟᴢᴢᴢᴢ 𝐆ɪᴠᴇ 𝐌ᴇ 𝐅ᴜʟʟ 𝐑ɪɢʜᴛ😡😓"
         return msg_text
     except Exception as e:
         msg_text = f"opps!!\n{e}"
@@ -93,14 +93,14 @@ async def mute_user(user_id, first_name, admin_id, admin_name, chat_id, reason, 
         else:
             await app.restrict_chat_member(chat_id, user_id, ChatPermissions())
     except ChatAdminRequired:
-        msg_text = "Mute rights? Nah, I'm just here for the digital high-fives 🙌\nGive me mute rights! 😡🥺"
+        msg_text = "𝐈 𝐇ᴀᴠᴇ 𝐍ᴏ 𝐑ɪɢʜᴛ😢😩....𝐏ʟᴢᴢᴢᴢ 𝐆ɪᴠᴇ 𝐌ᴇ 𝐅ᴜʟʟ 𝐑ɪɢʜᴛ😡😓"
         return msg_text, False
     except UserAdminInvalid:
-        msg_text = "I wont mute an admin bruh!!"
+        msg_text = "𝐈 𝐖ᴏɴᴛ 𝐌ᴜᴛᴇ 𝐀ɴ 𝐀ᴅᴍɪɴ 𝐁ʀᴜʜ 𝐎ʀ 𝐒ɪꜱ.... 𝐒ᴏ 𝐏ʟᴢᴢ 𝐀ᴜᴋᴀᴛ 𝐌ᴇ 𝐌ᴜᴛᴇ 𝐊ʀᴏ!"😂"
         return msg_text, False
     except Exception as e:
         if user_id == {app.id}:
-            msg_text = "why should i mute myself? sorry but I'm not stupid like you"
+            msg_text = "𝐖ʜʏ 𝐒ʜᴏᴜʟᴅ 𝐈 𝐌ᴜᴛᴇ 𝐌ʏꜱᴇʟꜰ? 𝐒oʀʀʏ 𝐁ᴜᴛ 𝐈'ᴍ 𝐍ᴏᴛ 𝐒tuᴘɪᴅ 𝐋ɪᴋᴇ 𝐘oᴜ😂😜!!"
             return msg_text, False
         
         msg_text = f"opps!!\n{e}"
@@ -134,7 +134,7 @@ async def unmute_user(user_id, first_name, admin_id, admin_name, chat_id):
             )
         )
     except ChatAdminRequired:
-        msg_text = "Mute rights? Nah, I'm just here for the digital high-fives 🙌\nGive me unmute rights! 😡🥺"
+        msg_text = "𝐈 𝐇ᴀᴠᴇ 𝐍ᴏ 𝐑ɪɢʜᴛ😢😩....𝐏ʟᴢᴢᴢᴢ 𝐆ɪᴠᴇ 𝐌ᴇ 𝐅ᴜʟʟ 𝐑ɪɢʜᴛ😡😓"
         return msg_text
     except Exception as e:
         msg_text = f"opps!!\n{e}"
@@ -159,10 +159,10 @@ async def ban_command_handler(client, message):
         if member.privileges.can_restrict_members:
             pass
         else:
-            msg_text = "You dont have permission to ban someone"
+            msg_text = "𝐀ᴡᴡᴡ 𝐀ʟᴇ 𝐀ʟᴇ 𝐘ᴏᴜ 𝐃ᴏɴᴛ 𝐇ᴀᴠᴇ 𝐏ᴇʀᴍɪꜱꜱɪᴏɴ 𝐓ᴏ 𝐁ᴀɴ 𝐒ᴏᴍᴇᴏɴᴇ😛😝😂..𝐎ᴡɴᴇʀ 𝐒ᴇ 𝐑ɪɢʜᴛ 𝐌ᴀɴɢ 𝐋ᴏ...!!😁"
             return await message.reply_text(msg_text)
     else:
-        msg_text = "You dont have permission to ban someone"
+        msg_text = "𝐀ᴡᴡᴡ 𝐀ʟᴇ 𝐀ʟᴇ 𝐘ᴏᴜ 𝐃ᴏɴᴛ 𝐇ᴀᴠᴇ 𝐏ᴇʀᴍɪꜱꜱɪᴏɴ 𝐓ᴏ 𝐁ᴀɴ 𝐒ᴏᴍᴇᴏɴᴇ😛😝😂..𝐎ᴡɴᴇʀ 𝐒ᴇ 𝐑ɪɢʜᴛ 𝐌ᴀɴɢ 𝐋ᴏ...!!😁"
         return await message.reply_text(msg_text)
 
     # Extract the user ID from the command or reply
@@ -178,7 +178,7 @@ async def ban_command_handler(client, message):
             except:
                 user_obj = await get_userid_from_username(message.command[1])
                 if user_obj == None:
-                    return await message.reply_text("I can't find that user")
+                    return await message.reply_text("𝐈 𝐂ᴀɴᴛ 𝐅ɪɴᴅ 𝐓ʜᴀᴛ 𝐔ꜱᴇʀ 𝐏ʟᴢᴢ 𝐓ᴀɢ 𝐇ᴇʀ/𝐇ɪᴍ😉😙!!!...")
                 user_id = user_obj[0]
                 first_name = user_obj[1]
 
@@ -192,7 +192,7 @@ async def ban_command_handler(client, message):
         first_name = message.reply_to_message.from_user.first_name
         reason = None
     else:
-        await message.reply_text("Please specify a valid user or reply to that user's message")
+        await message.reply_text("𝐈 𝐂ᴀɴᴛ 𝐅ɪɴᴅ 𝐓ʜᴀᴛ 𝐔ꜱᴇʀ 𝐏ʟᴢᴢ 𝐓ᴀɢ 𝐇ᴇʀ/𝐇ɪᴍ😉😙!!!...")
         return
         
     msg_text, result = await ban_user(user_id, first_name, admin_id, admin_name, chat_id, reason)
@@ -213,10 +213,10 @@ async def unban_command_handler(client, message):
         if member.privileges.can_restrict_members:
             pass
         else:
-            msg_text = "You dont have permission to unban someone"
+            msg_text = "𝐀ᴡᴡᴡ 𝐀ʟᴇ 𝐀ʟᴇ 𝐘ᴏᴜ 𝐃ᴏɴᴛ 𝐇ᴀᴠᴇ 𝐏ᴇʀᴍɪꜱꜱɪᴏɴ 𝐓ᴏ 𝐔ɴ𝐁ᴀɴ 𝐒ᴏᴍᴇᴏɴᴇ😛😝😂..𝐎ᴡɴᴇʀ 𝐒ᴇ 𝐑ɪɢʜᴛ 𝐌ᴀɴɢ 𝐋ᴏ...!!😁"
             return await message.reply_text(msg_text)
     else:
-        msg_text = "You dont have permission to unban someone"
+        msg_text = "𝐀ᴡᴡᴡ 𝐀ʟᴇ 𝐀ʟᴇ 𝐘ᴏᴜ 𝐃ᴏɴᴛ 𝐇ᴀᴠᴇ 𝐏ᴇʀᴍɪꜱꜱɪᴏɴ 𝐓ᴏ 𝐔ɴ𝐁ᴀɴ 𝐒ᴏᴍᴇᴏɴᴇ😛😝😂..𝐎ᴡɴᴇʀ 𝐒ᴇ 𝐑ɪɢʜᴛ 𝐌ᴀɴɢ 𝐋ᴏ...!!😁"
         return await message.reply_text(msg_text)
 
     # Extract the user ID from the command or reply
@@ -227,7 +227,7 @@ async def unban_command_handler(client, message):
         except:
             user_obj = await get_userid_from_username(message.command[1])
             if user_obj == None:
-                    return await message.reply_text("I can't find that user")
+                    return await message.reply_text("𝐈 𝐂ᴀɴᴛ 𝐅ɪɴᴅ 𝐓ʜᴀᴛ 𝐔ꜱᴇʀ 𝐏ʟᴢᴢ 𝐓ᴀɢ 𝐇ᴇʀ/𝐇ɪᴍ😉😙!!!...")
             user_id = user_obj[0]
             first_name = user_obj[1]
 
@@ -235,7 +235,7 @@ async def unban_command_handler(client, message):
         user_id = message.reply_to_message.from_user.id
         first_name = message.reply_to_message.from_user.first_name
     else:
-        await message.reply_text("Please specify a valid user or reply to that user's message")
+        await message.reply_text("𝐈 𝐂ᴀɴᴛ 𝐅ɪɴᴅ 𝐓ʜᴀᴛ 𝐔ꜱᴇʀ 𝐏ʟᴢᴢ 𝐓ᴀɢ 𝐇ᴇʀ/𝐇ɪᴍ😉😙!!!...")
         return
         
     msg_text = await unban_user(user_id, first_name, admin_id, admin_name, chat_id)
@@ -255,10 +255,10 @@ async def mute_command_handler(client, message):
         if member.privileges.can_restrict_members:
             pass
         else:
-            msg_text = "You dont have permission to mute someone"
+            msg_text = "𝐀ᴡᴡᴡ 𝐀ʟᴇ 𝐀ʟᴇ 𝐘ᴏᴜ 𝐃ᴏɴᴛ 𝐇ᴀᴠᴇ 𝐏ᴇʀᴍɪꜱꜱɪᴏɴ 𝐓ᴏ 𝐌ᴜᴛᴇ 𝐒ᴏᴍᴇᴏɴᴇ😛😝😂..𝐎ᴡɴᴇʀ 𝐒ᴇ 𝐑ɪɢʜᴛ 𝐌ᴀɴɢ 𝐋ᴏ...!!😁"
             return await message.reply_text(msg_text)
     else:
-        msg_text = "You dont have permission to mute someone"
+        msg_text = "𝐀ᴡᴡᴡ 𝐀ʟᴇ 𝐀ʟᴇ 𝐘ᴏᴜ 𝐃ᴏɴᴛ 𝐇ᴀᴠᴇ 𝐏ᴇʀᴍɪꜱꜱɪᴏɴ 𝐓ᴏ 𝐌ᴜᴛᴇ 𝐒ᴏᴍᴇᴏɴᴇ😛😝😂..𝐎ᴡɴᴇʀ 𝐒ᴇ 𝐑ɪɢʜᴛ 𝐌ᴀɴɢ 𝐋ᴏ...!!😁"
         return await message.reply_text(msg_text)
 
     # Extract the user ID from the command or reply
@@ -274,7 +274,7 @@ async def mute_command_handler(client, message):
             except:
                 user_obj = await get_userid_from_username(message.command[1])
                 if user_obj == None:
-                    return await message.reply_text("I can't find that user")
+                    return await message.reply_text("𝐈 𝐂ᴀɴᴛ 𝐅ɪɴᴅ 𝐓ʜᴀᴛ 𝐔ꜱᴇʀ 𝐏ʟᴢᴢ 𝐓ᴀɢ 𝐇ᴇʀ/𝐇ɪᴍ😉😙!!!...")
                 user_id = user_obj[0]
                 first_name = user_obj[1]
 
@@ -288,7 +288,7 @@ async def mute_command_handler(client, message):
         first_name = message.reply_to_message.from_user.first_name
         reason = None
     else:
-        await message.reply_text("Please specify a valid user or reply to that user's message")
+        await message.reply_text("𝐈 𝐂ᴀɴᴛ 𝐅ɪɴᴅ 𝐓ʜᴀᴛ 𝐔ꜱᴇʀ 𝐏ʟᴢᴢ 𝐓ᴀɢ 𝐇ᴇʀ/𝐇ɪᴍ😉😙!!!...")
         return
     
     msg_text, result = await mute_user(user_id, first_name, admin_id, admin_name, chat_id, reason)
@@ -310,10 +310,10 @@ async def unmute_command_handler(client, message):
         if member.privileges.can_restrict_members:
             pass
         else:
-            msg_text = "You dont have permission to unmute someone"
+            msg_text = "𝐀ᴡᴡᴡ 𝐀ʟᴇ 𝐀ʟᴇ 𝐘ᴏᴜ 𝐃ᴏɴᴛ 𝐇ᴀᴠᴇ 𝐏ᴇʀᴍɪꜱꜱɪᴏɴ 𝐓ᴏ 𝐔ɴ𝐌ᴜᴛᴇ 𝐒ᴏᴍᴇᴏɴᴇ😛😝😂..𝐎ᴡɴᴇʀ 𝐒ᴇ 𝐑ɪɢʜᴛ 𝐌ᴀɴɢ 𝐋ᴏ...!!😁"
             return await message.reply_text(msg_text)
     else:
-        msg_text = "You dont have permission to unmute someone"
+        msg_text = "𝐀ᴡᴡᴡ 𝐀ʟᴇ 𝐀ʟᴇ 𝐘ᴏᴜ 𝐃ᴏɴᴛ 𝐇ᴀᴠᴇ 𝐏ᴇʀᴍɪꜱꜱɪᴏɴ 𝐓ᴏ 𝐔ɴ𝐌ᴜᴛᴇ 𝐒ᴏᴍᴇᴏɴᴇ😛😝😂..𝐎ᴡɴᴇʀ 𝐒ᴇ 𝐑ɪɢʜᴛ 𝐌ᴀɴɢ 𝐋ᴏ...!!😁"
         return await message.reply_text(msg_text)
 
     # Extract the user ID from the command or reply
@@ -324,7 +324,7 @@ async def unmute_command_handler(client, message):
         except:
             user_obj = await get_userid_from_username(message.command[1])
             if user_obj == None:
-                    return await message.reply_text("I can't find that user")
+                    return await message.reply_text("𝐈 𝐂ᴀɴᴛ 𝐅ɪɴᴅ 𝐓ʜᴀᴛ 𝐔ꜱᴇʀ 𝐏ʟᴢᴢ 𝐓ᴀɢ 𝐇ᴇʀ/𝐇ɪᴍ😉😙!!!...")
             user_id = user_obj[0]
             first_name = user_obj[1]
 
@@ -332,7 +332,7 @@ async def unmute_command_handler(client, message):
         user_id = message.reply_to_message.from_user.id
         first_name = message.reply_to_message.from_user.first_name
     else:
-        await message.reply_text("Please specify a valid user or reply to that user's message")
+        await message.reply_text("𝐈 𝐂ᴀɴᴛ 𝐅ɪɴᴅ 𝐓ʜᴀᴛ 𝐔ꜱᴇʀ 𝐏ʟᴢᴢ 𝐓ᴀɢ 𝐇ᴇʀ/𝐇ɪᴍ😉😙!!!...")
         return
         
     msg_text = await unmute_user(user_id, first_name, admin_id, admin_name, chat_id)
@@ -353,10 +353,10 @@ async def tmute_command_handler(client, message):
         if member.privileges.can_restrict_members:
             pass
         else:
-            msg_text = "You dont have permission to mute someone"
+            msg_text = "𝐀ᴡᴡᴡ 𝐀ʟᴇ 𝐀ʟᴇ 𝐘ᴏᴜ 𝐃ᴏɴᴛ 𝐇ᴀᴠᴇ 𝐏ᴇʀᴍɪꜱꜱɪᴏɴ 𝐓ᴏ 𝐌ᴜᴛᴇ 𝐒ᴏᴍᴇᴏɴᴇ😛😝😂..𝐎ᴡɴᴇʀ 𝐒ᴇ 𝐑ɪɢʜᴛ 𝐌ᴀɴɢ 𝐋ᴏ...!!😁"
             return await message.reply_text(msg_text)
     else:
-        msg_text = "You dont have permission to mute someone"
+        msg_text = "𝐀ᴡᴡᴡ 𝐀ʟᴇ 𝐀ʟᴇ 𝐘ᴏᴜ 𝐃ᴏɴᴛ 𝐇ᴀᴠᴇ 𝐏ᴇʀᴍɪꜱꜱɪᴏɴ 𝐓ᴏ 𝐌ᴜᴛᴇ 𝐒ᴏᴍᴇᴏɴᴇ😛😝😂..𝐎ᴡɴᴇʀ 𝐒ᴇ 𝐑ɪɢʜᴛ 𝐌ᴀɴɢ 𝐋ᴏ...!!😁"
         return await message.reply_text(msg_text)
 
     # Extract the user ID from the command or reply
@@ -408,10 +408,10 @@ async def tmute_command_handler(client, message):
                 else:
                     return await message.reply_text("wrong format!!\nFormat:\nm: Minutes\nh: Hours\nd: Days")
             except:
-                return await message.reply_text("Please specify a valid user or reply to that user's message\nFormat: `/tmute @user 2m`")
+                return await message.reply_text("𝐈 𝐂ᴀɴᴛ 𝐅ɪɴᴅ 𝐓ʜᴀᴛ 𝐔ꜱᴇʀ 𝐏ʟᴢᴢ 𝐓ᴀɢ 𝐇ᴇʀ/𝐇ɪᴍ😉😙!!!... \nFormat: `/tmute @user 2m`")
 
     else:
-        await message.reply_text("Please specify a valid user or reply to that user's message\nFormat: /tmute <username> <time>")
+        await message.reply_text("𝐈 𝐂ᴀɴᴛ 𝐅ɪɴᴅ 𝐓ʜᴀᴛ 𝐔ꜱᴇʀ 𝐏ʟᴢᴢ 𝐓ᴀɢ 𝐇ᴇʀ/𝐇ɪᴍ😉😙!!!... \nFormat: /tmute <username> <time>")
         return
     
     msg_text, result = await mute_user(user_id, first_name, admin_id, admin_name, chat_id, reason=None, time=mute_duration)
