@@ -11,7 +11,7 @@ from VIPMUSIC import app
 async def purge(app: app, msg: Message):
     
     if msg.chat.type != ChatType.SUPERGROUP:
-        await msg.reply_text(text="**ɪ ᴄᴀɴ'ᴛ ᴘᴜʀɢᴇ ᴍᴇssᴀɢᴇs ɪɴ ᴀ ʙᴀsɪᴄ ɢʀᴏᴜᴘ ᴍᴀᴋᴇ sᴜᴘᴇʀ ɢʀᴏᴜᴘ.**")
+        await msg.reply_text(text="𝐈 𝐂ᴀɴ'ᴛ 𝐏ᴜʀɢᴇ 𝐌ᴇssᴀɢᴇs 𝐈ɴ 𝐀 𝐁ᴀsɪᴄ 𝐆ʀᴏᴜᴘ 𝐌ᴀᴋᴇ 𝐒ᴜᴘᴇʀ 𝐆ʀᴏᴜᴘ.")
         return
 
     if msg.reply_to_message:
@@ -30,17 +30,17 @@ async def purge(app: app, msg: Message):
                 
             await msg.delete()
         except MessageDeleteForbidden:
-            await msg.reply_text(text="**ɪ ᴄᴀɴ'ᴛ ᴅᴇʟᴇᴛᴇ ᴀʟʟ ᴍᴇssᴀɢᴇs. ᴛʜᴇ ᴍᴇssᴀɢᴇs ᴍᴀʏ ʙᴇ ᴛᴏᴏ ᴏʟᴅ, ɪ ᴍɪɢʜᴛ ɴᴏᴛ ʜᴀᴠᴇ ᴅᴇʟᴇᴛᴇ ʀɪɢʜᴛs, ᴏʀ ᴛʜɪs ᴍɪɢʜᴛ ɴᴏᴛ ʙᴇ ᴀ sᴜᴘᴇʀɢʀᴏᴜᴘ.**")
+            await msg.reply_text(text="𝐈 𝐂ᴀɴ'ᴛ 𝐃ᴇʟᴇᴛᴇ 𝐀ʟʟ 𝐌ᴇssᴀɢᴇs. 𝐓ʜᴇ 𝐌ᴇssᴀɢᴇs 𝐌ᴀʏ 𝐁ᴇ 𝐓ᴏᴏ 𝐎ʟᴅ, 𝐈 𝐌ɪɢʜᴛ 𝐍ᴏᴛ 𝐇ᴀᴠᴇ 𝐃ᴇʟᴇᴛᴇ 𝐑ɪɢʜᴛs, 𝐎ʀ 𝐓ʜɪs 𝐌ɪɢʜᴛ 𝐍ᴏᴛ 𝐁ᴇ 𝐀 𝐒ᴜᴘᴇʀɢʀᴏᴜᴘ!!....")
             return
             
         except RPCError as ef:
-            await msg.reply_text(text=f"**sᴏᴍᴇ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀᴇᴅ, ʀᴇᴘᴏʀᴛ ɪᴛ ᴜsɪɴɢ** `/bug`<b>ᴇʀʀᴏʀ:</b> <code>{ef}</code>")
+            await msg.reply_text(text=f"𝐔ꜰꜰꜰ 𝐒ᴏᴍᴇ 𝐄ʀʀᴏʀ 𝐎ᴄᴄᴜʀᴇᴅ, 𝐑ᴇᴘᴏʀᴛ 𝐈ᴛ 𝐔sɪɴɢ😢😣...`/bug`<b>ᴇʀʀᴏʀ:</b> <code>{ef}</code>")
         count_del_msg = len(message_ids)
         sumit = await msg.reply_text(text=f"ᴅᴇʟᴇᴛᴇᴅ <i>{count_del_msg}</i> ᴍᴇssᴀɢᴇs")
         await sleep(3)
         await sumit.delete()
         return
-    await msg.reply_text("**ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ sᴛᴀʀᴛ ᴘᴜʀɢᴇ !**")
+    await msg.reply_text("𝐑ᴇᴘʟʏ 𝐓ᴏ 𝐀 𝐌ᴇssᴀɢᴇ 𝐓ᴏ 𝐒ᴛᴀʀᴛ 𝐏ᴜʀɢᴇ !")
     return
 
 
@@ -51,7 +51,7 @@ async def purge(app: app, msg: Message):
 async def spurge(app: app, msg: Message):
 
     if msg.chat.type != ChatType.SUPERGROUP:
-        await msg.reply_text(text="**ɪ ᴄᴀɴ'ᴛ ᴘᴜʀɢᴇ ᴍᴇssᴀɢᴇs ɪɴ ᴀ ʙᴀsɪᴄ ɢʀᴏᴜᴘ ᴍᴀᴋᴇ sᴜᴘᴇʀ ɢʀᴏᴜᴘ.**")
+        await msg.reply_text(text="𝐈 𝐂ᴀɴ'ᴛ 𝐏ᴜʀɢᴇ 𝐌ᴇssᴀɢᴇs 𝐈ɴ 𝐀 𝐁ᴀsɪᴄ 𝐆ʀᴏᴜᴘ 𝐌ᴀᴋᴇ 𝐒ᴜᴘᴇʀ 𝐆ʀᴏᴜᴘ.")
         return
 
     if msg.reply_to_message:
@@ -68,25 +68,25 @@ async def spurge(app: app, msg: Message):
                 await app.delete_messages(chat_id=msg.chat.id, message_ids=plist, revoke=True)
             await msg.delete()
         except MessageDeleteForbidden:
-            await msg.reply_text(text="**ɪ ᴄᴀɴ'ᴛ ᴅᴇʟᴇᴛᴇ ᴀʟʟ ᴍᴇssᴀɢᴇs. ᴛʜᴇ ᴍᴇssᴀɢᴇs ᴍᴀʏ ʙᴇ ᴛᴏᴏ ᴏʟᴅ, ɪ ᴍɪɢʜᴛ ɴᴏᴛ ʜᴀᴠᴇ ᴅᴇʟᴇᴛᴇ ʀɪɢʜᴛs, ᴏʀ ᴛʜɪs ᴍɪɢʜᴛ ɴᴏᴛ ʙᴇ ᴀ sᴜᴘᴇʀɢʀᴏᴜᴘ.**")
+            await msg.reply_text(text="𝐈 𝐂ᴀɴ'ᴛ 𝐃ᴇʟᴇᴛᴇ 𝐀ʟʟ 𝐌ᴇssᴀɢᴇs. 𝐓ʜᴇ 𝐌ᴇssᴀɢᴇs 𝐌ᴀʏ 𝐁ᴇ 𝐓ᴏᴏ 𝐎ʟᴅ, 𝐈 𝐌ɪɢʜᴛ 𝐍ᴏᴛ 𝐇ᴀᴠᴇ 𝐃ᴇʟᴇᴛᴇ 𝐑ɪɢʜᴛs, 𝐎ʀ 𝐓ʜɪs 𝐌ɪɢʜᴛ 𝐍ᴏᴛ 𝐁ᴇ 𝐀 𝐒ᴜᴘᴇʀɢʀᴏᴜᴘ!!....")
             return
             
         except RPCError as ef:
-            await msg.reply_text(text=f"**sᴏᴍᴇ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀᴇᴅ, ʀᴇᴘᴏʀᴛ ɪᴛ ᴜsɪɴɢ** `/bug`<b>ᴇʀʀᴏʀ:</b> <code>{ef}</code>")           
+            await msg.reply_text(text=f"𝐔ꜰꜰꜰ 𝐒ᴏᴍᴇ 𝐄ʀʀᴏʀ 𝐎ᴄᴄᴜʀᴇᴅ, 𝐑ᴇᴘᴏʀᴛ 𝐈ᴛ 𝐔sɪɴɢ😢😣... `/bug`<b>ᴇʀʀᴏʀ:</b> <code>{ef}</code>")           
             return        
-    await msg.reply_text("**ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ sᴛᴀʀᴛ ᴘᴜʀɢᴇ !**")
+    await msg.reply_text("𝐑ᴇᴘʟʏ 𝐓ᴏ 𝐀 𝐌ᴇssᴀɢᴇ 𝐓ᴏ 𝐒ᴛᴀʀᴛ 𝐏ᴜʀɢᴇ !")
     return
 
 
 @app.on_message(filters.command("del") & admin_filter)
 async def del_msg(app: app, msg: Message):
     if msg.chat.type != ChatType.SUPERGROUP:
-        await msg.reply_text(text="**ɪ ᴄᴀɴ'ᴛ ᴘᴜʀɢᴇ ᴍᴇssᴀɢᴇs ɪɴ ᴀ ʙᴀsɪᴄ ɢʀᴏᴜᴘ ᴍᴀᴋᴇ sᴜᴘᴇʀ ɢʀᴏᴜᴘ.**")
+        await msg.reply_text(text="𝐈 𝐂ᴀɴ'ᴛ 𝐏ᴜʀɢᴇ 𝐌ᴇssᴀɢᴇs 𝐈ɴ 𝐀 𝐁ᴀsɪᴄ 𝐆ʀᴏᴜᴘ 𝐌ᴀᴋᴇ 𝐒ᴜᴘᴇʀ 𝐆ʀᴏᴜᴘ.")
         return        
     if msg.reply_to_message:
         await msg.delete()
         await app.delete_messages(chat_id=msg.chat.id, message_ids=msg.reply_to_message.id)
     else:
-        await msg.reply_text(text="**ᴡʜᴀᴛ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴇʟᴇᴛᴇ.**")
+        await msg.reply_text(text="𝐖ʜᴀᴛ 𝐃ᴏ 𝐘ᴏᴜ 𝐖ᴀɴᴛ 𝐓ᴏ 𝐃ᴇʟᴇᴛᴇ...𝐏ʟᴢᴢ 𝐓ᴇʟʟ...!!")
         return
 
