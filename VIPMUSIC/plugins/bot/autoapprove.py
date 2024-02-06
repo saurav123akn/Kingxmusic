@@ -13,11 +13,11 @@ from pyrogram.enums import ParseMode
 from typing import Union, Optional
 
 random_photo = [
-    "https://telegra.ph/file/1949480f01355b4e87d26.jpg",
-    "https://telegra.ph/file/3ef2cc0ad2bc548bafb30.jpg",
-    "https://telegra.ph/file/a7d663cd2de689b811729.jpg",
-    "https://telegra.ph/file/6f19dc23847f5b005e922.jpg",
-    "https://telegra.ph/file/2973150dd62fd27a3a6ba.jpg",
+    "https://telegra.ph/file/19fa6b8b54ddb301839d3.jpg",
+    "https://telegra.ph/file/5ea3358c7090f968eb73f.jpg",
+    "https://telegra.ph/file/4fa8d5906b60041a27fe9.jpg",
+    "https://telegra.ph/file/b7337635e4c01554b4215.jpg",
+    "https://telegra.ph/file/2a20634d509d79d63ba88.jpg",
 ]
 
 # --------------------------------------------------------------------------------- #
@@ -78,14 +78,15 @@ font_path = "VIPMUSIC/assets/hiroko.ttf"
 chat_id_env = environ.get("CHAT_ID")
 CHAT_ID = [int(app) for app in chat_id_env.split(",")] if chat_id_env else []
 
-TEXT = environ.get("APPROVED_WELCOME_TEXT", "**❅─────✧❅✦❅✧─────❅**\n**🥀ʜᴇʏ {mention}**\n\n**🏓ᴡᴇʟᴄᴏᴍᴇ ɪɴ ɴᴇᴡ ɢʀᴏᴜᴘ✨**\n\n**➻** {title}\n\n**💞ɴᴏᴡ ᴍᴀᴋᴇ ɴᴇᴡ ғʀɪᴇɴᴅs ᴀɴᴅ sᴛᴀʏ ᴀʟᴡᴀʏs ᴏɴʟɪɴᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ🥳**\n**❅─────✧❅✦❅✧─────❅**")
+TEXT = environ.get("APPROVED_WELCOME_TEXT", "**┏━━━━•❅•°• ❈  •°•❅•━━━━┓**\n**𝐇ᴇʏ... {mention}**\n\n**🅦𝐞᭄𝗹𝗰𝗼𝗺𝗲 ✪  ✰✰**\n\n**➻** {title}\n\n**💞𝐍ᴏᴡ 𝐌ᴀᴋᴇ 𝐍ᴇᴡ 𝐅ʀɪᴇɴᴅs 𝐀ɴᴅ 𝐒ᴛᴀʏ 𝐀ʟᴡᴀʏs 𝐎ɴʟɪɴᴇ 𝐈ɴ 𝐓ʜɪs 𝐆ʀᴏᴜᴘ🥳**\n**┗━━━━•❅•°• ❈  •°•❅•━━━━┛**")
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # List of random photo links
 random_photo_links = [
-    "https://telegra.ph/file/ca950c0b8316b968957fa.jpg",
-    "https://telegra.ph/file/ca950c0b8316b968957fa.jpg",
-    "https://telegra.ph/file/ca950c0b8316b968957fa.jpg",
+    "https://telegra.ph/file/09d166226f98b76eedf9a.jpg",
+    "https://telegra.ph/file/aee3b053e42e1a974a5a7.jpg",
+    "https://telegra.ph/file/09d166226f98b76eedf9a.jpg"'
+
     # Add more links as needed
 ]
 
@@ -120,7 +121,7 @@ async def autoapprove(client: app, message: ChatJoinRequest):
                     [
                         [
                             InlineKeyboardButton(
-                                "🌱ᴡᴇʟᴄᴏᴍᴇ ᴅᴇᴀʀ🌱", url=f"https://t.me/{app.username}?startgroup=true"
+                                "⛦⃕‌•𝐖ᴇʟᴄᴏᴍᴇ 𝐃ᴇᴀʀ⛦⃕‌•", url=f"https://t.me/{app.username}?startgroup=true"
                             )
                         ]
                     ]
