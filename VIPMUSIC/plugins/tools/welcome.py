@@ -103,18 +103,20 @@ async def handle_member_update(client: app, member: ChatMemberUpdated):
 
             # Welcome message for new members
             caption = (
-            f"**🌷𝐇ᴇʏ {member.new_chat_member.user.mention}**\n\n**🏘𝐖ᴇʟᴄᴏᴍᴇ 𝐈ɴ 𝐍ᴇᴡ 𝐆ʀᴏᴜᴘ🥳**\n\n"
-            f"**📝** {chat.title}\n"
-            f"**🔐ʟɪɴᴋ » @{chat.username}**\n➖➖➖➖➖➖➖➖➖➖➖\n"
-            f"**๏ ᴍᴇᴍʙᴇʀ ɪᴅ »** `{member.new_chat_member.user.id}`\n"
-            f"**๏ ᴜsᴇʀɴᴀᴍᴇ » @{member.new_chat_member.user.username}**\n➖➖➖➖➖➖➖➖➖➖➖\n"
-            f"**👥ᴛᴏᴛᴀʟ ᴍᴇᴍʙᴇʀ ɴᴏᴡ » {count}**"
+            f"**𝐇ᴇʏ»» {member.new_chat_member.user.mention} ✰✰**\n\n**🅦𝐞᭄𝗹𝗰𝗼𝗺𝗲 ✪  𝐓ᴏ👇👇 ✰✰**\n\n"
+            f"**┏━━•❅•°• ❈  •°•❅•━━┓**\n"
+            f"**  {chat.title}  ** \n"
+            f"**┗━━•❅•°• ❈  •°•❅•━━┛**\n\n"
+            f"**☞𝐌ᴇᴍʙᴇʀ 𝐈ɴꜰᴏʀᴍᴀᴛɪᴏɴ☜\n╭✠╼━━━❖━━━━━✠╮\n"
+            f"**│•𝐍𝐞𝐰 𝐁𝐮𝐝𝐝𝐲 ➠ {member.new_chat_member.user.mention}**\n"
+            f"**│•𝐈𝐃➠** {member.new_chat_member.user.id} \n"
+            f"**│•𝐔𝐬𝐞𝐫𝐍𝐚𝐦𝐞➠ @{member.new_chat_member.user.username}**\n╰✠╼━━━━━━❖━━━━━━✠╯\n"
+            f"**☞𝐋ɪɴᴋ» @{chat.username}**\n"
+            f"**☞𝐓ᴏᴛᴀʟ 𝐌ᴇᴍʙᴇʀ 𝐍ᴏᴡ»» {count}**"
             )
-            button_text = "๏ ᴠɪᴇᴡ ɴᴇᴡ ᴍᴇᴍʙᴇʀ ๏"
-            add_button_text = "๏ ᴋɪᴅɴᴀᴘ ᴍᴇ ๏"
+            add_button_text = "֍𝐊ɪᴅɴᴀᴘ 𝐌ᴇ֎"
 
             # Generate a deep link to open the user's profile
-            deep_link = f"tg://openmessage?user_id={user.id}"
             add_link = f"https://t.me/{app.username}?startgroup=true"
 
             # Send the message with the photo, caption, and button
@@ -123,7 +125,6 @@ async def handle_member_update(client: app, member: ChatMemberUpdated):
                 photo=welcome_photo,
                 caption=caption,
                 reply_markup=InlineKeyboardMarkup([
-                    [InlineKeyboardButton(button_text, url=deep_link)],
                     [InlineKeyboardButton(text=add_button_text, url=add_link)],
                 ])
             )
