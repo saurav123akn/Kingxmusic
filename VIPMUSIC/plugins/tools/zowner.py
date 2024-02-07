@@ -15,13 +15,13 @@ app.on_message(
     & filters.group)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/4b52da6d880cbb199298a.jpg",
-        caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐆𝐄𝐓🌱𝐑𝐄𝐏𝐎🍁""",
+        photo=f"https://telegra.ph/file/6cd4ea12c43be90e1a5f7.jpg",
+        caption=f"""☞𝐂ʟɪᴄᴋ 𝐁ᴇʟᴏᴡ⤵️⤵️𝐁ᴜᴛᴛᴏɴ 𝐓ᴏ 𝐆ᴇᴛ 𝐑ᴇᴘᴏ☜""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://github.com/THE-VIP-BOY-OP/VIP-MUSIC")
+                        "☞𝐒ᴏᴜʀᴄᴇ☜", url=f"https://github.com/saurav123akn/Kingxmusic")
                 ]
             ]
         ),
@@ -32,13 +32,13 @@ async def help(client: Client, message: Message):
     & filters.group)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/4b52da6d880cbb199298a.jpg",
-        caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐆𝐄𝐓🌱𝐑𝐄𝐏𝐎🍁""",
+        photo=f"https://telegra.ph/file/6cd4ea12c43be90e1a5f7.jpg",
+        caption=f"""☞𝐂ʟɪᴄᴋ 𝐁ᴇʟᴏᴡ⤵️⤵️𝐁ᴜᴛᴛᴏɴ 𝐓ᴏ 𝐆ᴇᴛ 𝐑ᴇᴘᴏ☜""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://github.com/THE-VIP-BOY-OP/VIP-MUSIC")
+                        "☞𝐒ᴏᴜʀᴄᴇ☜", url=f"https://github.com/saurav123akn/Kingxmusic")
                 ]
             ]
         ),
@@ -49,13 +49,13 @@ async def help(client: Client, message: Message):
     & filters.private)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/4b52da6d880cbb199298a.jpg",
-        caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐆𝐄𝐓🌱𝐑𝐄𝐏𝐎🍁""",
+        photo=f"https://telegra.ph/file/6cd4ea12c43be90e1a5f7.jpg",
+        caption=f"""☞𝐂ʟɪᴄᴋ 𝐁ᴇʟᴏᴡ⤵️⤵️𝐁ᴜᴛᴛᴏɴ 𝐓ᴏ 𝐆ᴇᴛ 𝐑ᴇᴘᴏ☜""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://github.com/THE-VIP-BOY-OP/VIP-MUSIC")
+                        "☞𝐒ᴏᴜʀᴄᴇ☜", url=f"https://github.com/saurav123akn/Kingxmusic")
                 ]
             ]
         ),
