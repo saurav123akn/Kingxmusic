@@ -30,8 +30,8 @@ def private_panel(_):
             )
         ],
         [
-            InlineKeyboardButton(text="༒𝐊𝐈𝐍𝐆༒", url=f"https://t.me/King_oF_Heartx),
-            InlineKeyboardButton(text="༒𝐐𝐔𝐄𝐄𝐍༒", url=f"https://t.me/QUEENN_OF_HEART),
+            InlineKeyboardButton(text="༒𝐊𝐈𝐍𝐆༒", url=f"https://t.me/King_oF_Heartx"),
+            InlineKeyboardButton(text="༒𝐐𝐔𝐄𝐄𝐍༒", url=f"https://t.me/QUEENN_OF_HEART"),
         ],
         [
             InlineKeyboardButton(text="֎𝐇ᴇʟᴘ֍", callback_data="settings_back_helper"),
