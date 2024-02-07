@@ -50,6 +50,6 @@ async def stop_tagging(_, message):
     chat_id = message.chat.id
     if SPAM_CHATS.get(chat_id) == True:
         SPAM_CHATS[chat_id] = False
-        return await message.reply_text("𝐓ᴀɢ 𝐏ʀᴏᴄᴇꜱꜱ 𝐒ᴛᴏᴘᴇᴅ 𝐒ᴜᴄᴄᴇꜱꜰᴜʟʟʏ!😙😊")
+        return await message.reply_text("𝐓ᴀɢ 𝐏ʀᴏᴄᴇꜱꜱ 𝐒ᴛᴏᴘᴇᴅ 𝐒ᴜᴄᴄᴇꜱꜰᴜʟʟʏ!")
     except KeyError:
-        await message.reply_text("𝐍ᴏ 𝐀ᴄᴛɪᴠᴇ 𝐓ᴀɢɢɪɴɢ 𝐏ʀᴏᴄᴇꜱꜱ 𝐅ᴏᴜɴᴅ!")
+        await message.reply_text("**𝐍ᴏ 𝐀ᴄᴛɪᴠᴇ 𝐓ᴀɢɢɪɴɢ 𝐏ʀᴏᴄᴇꜱꜱ 𝐅ᴏᴜɴᴅ!**")
