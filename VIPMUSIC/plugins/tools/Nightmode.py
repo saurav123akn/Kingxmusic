@@ -29,12 +29,12 @@ OPEN_CHAT = ChatPermissions(
     can_pin_messages = True,
     can_invite_users = True )
     
-buttons = InlineKeyboardMarkup([[InlineKeyboardButton("๏ ᴇɴᴀʙʟᴇ ๏", callback_data="add_night"),InlineKeyboardButton("๏ ᴅɪsᴀʙʟᴇ ๏", callback_data="rm_night")]])         
-add_buttons = InlineKeyboardMarkup([[InlineKeyboardButton(text= "๏ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ๏", url=f"https://t.me/{app.username}?startgroup=true")]])
+buttons = InlineKeyboardMarkup([[InlineKeyboardButton("๏ 𝐄ɴᴀʙʟᴇ ๏", callback_data="add_night"),InlineKeyboardButton("๏ 𝐃ɪsᴀʙʟᴇ ๏", callback_data="rm_night")]])         
+add_buttons = InlineKeyboardMarkup([[InlineKeyboardButton(text= "๏ 𝐀ᴅᴅ 𝐌ᴇ 𝐈ɴ 𝐆ʀᴏᴜᴘ ๏", url=f"https://t.me/{app.username}?startgroup=true")]])
                               
 @app.on_message(filters.command("nightmode") & filters.group)
 async def _nightmode(_, message):
-    return await message.reply_photo(photo="https://telegra.ph//file/06649d4d0bbf4285238ee.jpg", caption="**ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴇɴᴀʙʟᴇ ᴏʀ ᴅɪsᴀʙʟᴇ ɴɪɢʜᴛᴍᴏᴅᴇ ɪɴ ᴛʜɪs ᴄʜᴀᴛ.**",reply_markup=buttons)
+    return await message.reply_photo(photo="https://telegra.ph/file/5afd222f2ea02250419f9.jpg", caption="**𝐂ʟɪᴄᴋ 𝐎ɴ 𝐓ʜᴇ 𝐁ᴇʟᴏᴡ𝐁ᴜᴛᴛᴏɴ 𝐓ᴏ 𝐄ɴᴀʙʟᴇ 𝐎ʀ 𝐃ɪsᴀʙʟᴇ 𝐍ɪɢʜᴛᴍᴏᴅᴇ 𝐈ɴ 𝐓ʜɪs 𝐂ʜᴀᴛ.**",reply_markup=buttons)
               
      
 @app.on_callback_query(filters.regex("^(add_night|rm_night)$"))
@@ -49,16 +49,16 @@ async def nightcb(_, query : CallbackQuery):
     if user_id in administrators:   
         if data == "add_night":
             if check_night:        
-                await query.message.edit_caption("**๏ ɴɪɢʜᴛᴍᴏᴅᴇ ɪs ᴀʟʀᴇᴀᴅʏ ᴇɴᴀʙʟᴇᴅ ɪɴ ᴛʜɪs ᴄʜᴀᴛ.**")
+                await query.message.edit_caption("**๏ 𝐍ɪɢʜᴛᴍᴏᴅᴇ 𝐈s 𝐀ʟʀᴇᴀᴅʏ 𝐄ɴᴀʙʟᴇᴅ 𝐈ɴ 𝐓ʜɪs 𝐂ʜᴀᴛ.**")
             elif not check_night :
                 await nightmode_on(chat_id)
-                await query.message.edit_caption("**๏ ᴀᴅᴅᴇᴅ ᴄʜᴀᴛ ᴛᴏ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ . ᴛʜɪs ɢʀᴏᴜᴘ ᴡɪʟʟ ʙᴇ ᴄʟᴏsᴇᴅ ᴏɴ 𝟷𝟸ᴀᴍ [IST] ᴀɴᴅ ᴡɪʟʟ ᴏᴘᴇɴᴇᴅ ᴏɴ 𝟶𝟼ᴀᴍ [IST] .**") 
+                await query.message.edit_caption("**๏ 𝐀ᴅᴅᴇᴅ 𝐂ʜᴀᴛ 𝐓ᴏ 𝐌ʏ 𝐃ᴀᴛᴀʙᴀsᴇ . 𝐓ʜɪs 𝐆ʀᴏᴜᴘ 𝐖ɪʟʟ 𝐁ᴇ 𝐂ʟᴏsᴇᴅ 𝐎ɴ 𝟷𝟸ᴀᴍ [IST] 𝐀ɴᴅ 𝐖ɪʟʟ 𝐎ᴘᴇɴᴇᴅ 𝐎ɴ 𝟶𝟼ᴀᴍ [IST] .**") 
         if data == "rm_night":
             if check_night:  
                 await nightmode_off(chat_id)      
-                await query.message.edit_caption("**๏ ɴɪɢʜᴛᴍᴏᴅᴇ ʀᴇᴍᴏᴠᴇᴅ ғʀᴏᴍ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ !**")
+                await query.message.edit_caption("**๏ 𝐍ɪɢʜᴛᴍᴏᴅᴇ 𝐑ᴇᴍᴏᴠᴇᴅ 𝐅ʀᴏᴍ 𝐌ʏ 𝐃ᴀᴛᴀʙᴀsᴇ !**")
             elif not check_night:
-                await query.message.edit_caption("**๏  ɴɪɢʜᴛᴍᴏᴅᴇ ɪs ᴀʟʀᴇᴀᴅʏ ᴅɪsᴀʙʟᴇᴅ  ɪɴ ᴛʜɪs ᴄʜᴀᴛ.**") 
+                await query.message.edit_caption("**๏  𝐍ɪɢʜᴛᴍᴏᴅᴇ 𝐈s 𝐀ʟʀᴇᴀᴅʏ 𝐃ɪsᴀʙʟᴇᴅ  𝐈ɴ 𝐓ʜɪs 𝐂ʜᴀᴛ.**") 
             
     
     
@@ -73,8 +73,8 @@ async def start_nightmode() :
         try:
             await app.send_photo(
                 add_chat,
-                photo="https://telegra.ph//file/06649d4d0bbf4285238ee.jpg",
-                caption= f"**ᴍᴀʏ ᴛʜᴇ ᴀɴɢᴇʟs ғʀᴏᴍ ʜᴇᴀᴠᴇɴ ʙʀɪɴɢ ᴛʜᴇ sᴡᴇᴇᴛᴇsᴛ ᴏғ ᴀʟʟ ᴅʀᴇᴀᴍs ғᴏʀ ʏᴏᴜ. ᴍᴀʏ ʏᴏᴜ ʜᴀᴠᴇ ʟᴏɴɢ ᴀɴᴅ ʙʟɪssғᴜʟ sʟᴇᴇᴘ ғᴜʟʟ ᴏғ ʜᴀᴘᴘʏ ᴅʀᴇᴀᴍs.\n\nɢʀᴏᴜᴘ ɪs ᴄʟᴏsɪɴɢ ɢᴏᴏᴅ ɴɪɢʜᴛ ᴇᴠᴇʀʏᴏɴᴇ  !**",
+                photo="https://telegra.ph/file/ef772b84405e119014317.jpg",
+                caption= f"**𝐌ᴀʏ 𝐓ʜᴇ 𝐀ɴɢᴇʟs 𝐅ʀᴏᴍ 𝐇ᴇᴀᴠᴇɴ 𝐁ʀɪɴɢ 𝐓ʜᴇ 𝐒ᴡᴇᴇᴛᴇsᴛ 𝐎ғ 𝐀ʟʟ 𝐃ʀᴇᴀᴍs 𝐅ᴏʀ 𝐘ᴏᴜ. 𝐌ᴀʏ 𝐘ᴏᴜ 𝐇ᴀᴠᴇ 𝐋ᴏɴɢ 𝐀ɴᴅ 𝐁ʟɪssғᴜʟ 𝐒ʟᴇᴇᴘ 𝐅ᴜʟʟ 𝐎ғ 𝐇ᴀᴘᴘʏ 𝐃ʀᴇᴀᴍs.\n\n𝐆ʀᴏᴜᴘ 𝐈s 𝐂ʟᴏsɪɴɢ 𝐆ᴏᴏᴅ 𝐍ɪɢʜᴛ 𝐄ᴠᴇʀʏᴏɴᴇ !**",
                 reply_markup=add_buttons,)
             
             await app.set_chat_permissions(add_chat,CLOSE_CHAT)
@@ -97,8 +97,8 @@ async def close_nightmode():
         try:
             await app.send_photo(
                 rm_chat,
-                photo="https://telegra.ph//file/14ec9c3ff42b59867040a.jpg",
-                caption= f"**ɢʀᴏᴜᴘ ɪs ᴏᴘᴇɴɪɴɢ ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ ᴇᴠᴇʀʏᴏɴᴇ !\n\nᴍᴀʏ ᴛʜɪs ᴅᴀʏ ᴄᴏᴍᴇ ᴡɪᴛʜ ᴀʟʟ ᴛʜᴇ ʟᴏᴠᴇ ʏᴏᴜʀ ʜᴇᴀʀᴛ ᴄᴀɴ ʜᴏʟᴅ ᴀɴᴅ ʙʀɪɴɢ ʏᴏᴜ ᴇᴠᴇʀʏ sᴜᴄᴄᴇss ʏᴏᴜ ᴅᴇsɪʀᴇ. Mᴀʏ ᴇᴀᴄʜ ᴏғ ʏᴏᴜʀ ғᴏᴏᴛsᴛᴇᴘs ʙʀɪɴɢ Jᴏʏ ᴛᴏ ᴛʜᴇ ᴇᴀʀᴛʜ ᴀɴᴅ ʏᴏᴜʀsᴇʟғ. ɪ ᴡɪsʜ ʏᴏᴜ ᴀ ᴍᴀɢɪᴄᴀʟ ᴅᴀʏ ᴀɴᴅ ᴀ ᴡᴏɴᴅᴇʀғᴜʟ ʟɪғᴇ ᴀʜᴇᴀᴅ.**",
+                photo="https://telegra.ph/file/17af366cac1f01baa45be.jpg",
+                caption= f"**𝐆ʀᴏᴜᴘ 𝐈s 𝐎ᴘᴇɴɪɴɢ 𝐆ᴏᴏᴅ 𝐌ᴏʀɴɪɴɢ 𝐄ᴠᴇʀʏᴏɴᴇ !\n\n𝐌ᴀʏ 𝐓ʜɪs 𝐃ᴀʏ 𝐂ᴏᴍᴇ 𝐖ɪᴛʜ 𝐀ʟʟ 𝐓ʜᴇ 𝐋ᴏᴠᴇ 𝐘ᴏᴜʀ 𝐇ᴇᴀʀᴛ 𝐂ᴀɴ 𝐇ᴏʟᴅ 𝐀ɴᴅ 𝐁ʀɪɴɢ 𝐘ᴏᴜ 𝐄ᴠᴇʀʏ 𝐒ᴜᴄᴄᴇss 𝐘ᴏᴜ 𝐃ᴇsɪʀᴇ. 𝐌ᴀʏ 𝐄ᴀᴄʜ 𝐎ғ 𝐘ᴏᴜʀ 𝐅ᴏᴏᴛsᴛᴇᴘs 𝐁ʀɪɴɢ 𝐉ᴏʏ 𝐓ᴏ 𝐓ʜᴇ 𝐄ᴀʀᴛʜ 𝐀ɴᴅ 𝐘ᴏᴜʀsᴇʟ 𝐈 𝐖𝐢sʜ 𝐘ᴏᴜ 𝐀 𝐌ᴀɢɪᴄᴀʟ ᴅ𝐃ᴀʏ 𝐀ɴᴅ 𝐀 𝐖ᴏɴᴅᴇʀғᴜʟ 𝐋ɪғᴇ 𝐀ʜᴇᴀᴅ.**",
                 reply_markup=add_buttons,)
             await app.set_chat_permissions(rm_chat,OPEN_CHAT)
 
