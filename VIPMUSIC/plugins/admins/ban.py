@@ -43,7 +43,7 @@ async def ban_user(user_id, first_name, admin_id, admin_name, chat_id, reason, t
         msg_text = "𝐈 𝐇ᴀᴠᴇ 𝐍ᴏ 𝐑ɪɢʜᴛ😢😩....𝐏ʟᴢᴢᴢᴢ 𝐆ɪᴠᴇ 𝐌ᴇ 𝐅ᴜʟʟ 𝐑ɪɢʜᴛ😡😓"
         return msg_text, False
     except UserAdminInvalid:
-        msg_text = "𝐈 𝐖ᴏɴᴛ 𝐁ᴀɴ 𝐀ɴ 𝐀ᴅᴍɪɴ 𝐁ʀᴜʜ 𝐎ʀ 𝐒ɪꜱ.... 𝐒ᴏ 𝐏ʟᴢᴢ 𝐀ᴜᴋᴀᴛ 𝐌ᴇ 𝐌ᴜᴛᴇ 𝐊ʀᴏ!"😂"
+        msg_text = "𝐈 𝐖ᴏɴᴛ 𝐁ᴀɴ 𝐀ɴ 𝐀ᴅᴍɪɴ 𝐁ʀᴜʜ 𝐎ʀ 𝐒ɪꜱ.... 𝐒ᴏ 𝐏ʟᴢᴢ 𝐀ᴜᴋᴀᴛ 𝐌ᴇ 𝐌ᴜᴛᴇ 𝐊ʀᴏ!😂"
         return msg_text, False
     except Exception as e:
         if user_id == {app.id}:
