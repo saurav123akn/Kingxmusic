@@ -31,15 +31,15 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/saurav123akn/Kingxmusic",
+    "Subhu030/BattleXmusic",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/OP_CODEX")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/TEAM_CDX")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/friendchatting03")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/friendchatting03")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = False
@@ -85,10 +85,10 @@ STRING5 = getenv("STRING_SESSION5", None)
 
 
 #    __      _______ _____    ___  __ _    _  _____ _____ _____   _____   ____ _______ 
-#    \ \    / /_   _|  __ \   |  \/  | |  | |/ ____|_   _/ ____|  |  _ \ / __ \__   __|
-#     \ \  / /  | | | |__) |  | \  / | |  | | (___   | || |       | |_) | |  | | | |   
-#      \ \/ /   | | |  ___/   | |\/| | |  | |\___ \  | || |       |  _ <| |  | | | |   
-#       \  /   _| |_| |       | |  | | |__| |____) |_| || |____   | |_) | |__| | | |   
+#    \ \    / /_   _|    |  \/  | |  | |/ ____|_   _/ ____|  |  _ \ / __ \__   __|
+#      | | |__) |  | \  / | |  | | (___   | || |       | |_) | |  | | | |   
+#      \|  ___/   | |\/| | |  | |\___ \  | || |       |  _ <| |  | | | |   
+#         | |  | | |__| |____) |_| || |____   | |_) | |__| | | |   
 #        \/   |_____|_|       |_|  |_|\____/|_____/|_____\_____|  |____/ \____/  |_|   
 
 
@@ -139,7 +139,7 @@ if SUPPORT_CHANNEL:
         )
 
 if SUPPORT_CHAT:
-    if not re.match("(?:http|https)://", SUPPORT_CHAT):
+    if not re.match("(?:http|https)://",friendchatting03):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
         )
